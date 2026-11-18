@@ -7,7 +7,7 @@ A dark, high-contrast UI theme and color scheme for **Sublime Text 4**, featurin
 
 ## Origin
 
-**Console** is derived from a theme originally created by **Luis Mercado** for the `cyberspace.online` community (and also adapted for Ghostty under the same name). The original description for that community reads:
+**Console** is derived from a theme originally created by me, **Luis Mercado,** for the `cyberspace.online` community (and also adapted for Ghostty under the same name). The original description for that community reads:
 
 > A theme for ᑕ¥βєяรקค¢є, inspired by old-school and obscure operating system command lines from the ’80s and ’90s, such as Plan 9 and the PC-88/98 DOS environments, among others.
 
