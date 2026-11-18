@@ -1,0 +1,243 @@
+{
+    "name": "Console",
+    "author": "Luis Mercado (Based on his own Ghostty and cyberspace.online themes of the same name)",
+    "variables": {
+        "bg": "#000000",
+        "fg": "#a97759",
+        "umber": "#2a241e",
+        "umber_soft": "#161310",
+        "muted": "#6e5647",
+        "punctuation_muted": "#825d47",
+        "red": "#b45648",
+        "sage": "#80a896",
+        "copper": "#a97759",
+        "blue": "#7393b9",
+        "orchid": "#bd7bcd",
+        "mint": "#a0d2bd",
+        "teal": "#447f78",
+        "peach": "#ffb385",
+        "sky": "#89afdd",
+        "bright_orchid": "#d389e5",
+        "light_mint": "#99c9b4"
+    },
+    "globals": {
+        "background": "var(bg)",
+        "foreground": "var(fg)",
+        "accent": "var(peach)",
+        "invisibles": "var(umber)",
+        "caret": "var(fg)",
+        "block_caret": "var(fg)",
+        "line_highlight": "var(umber_soft)",
+        "selection": "var(umber)",
+        "selection_foreground": "var(fg)",
+        "selection_border": "#443a30",
+        "inactive_selection": "color(var(umber) alpha(0.65))",
+        "gutter": "var(bg)",
+        "gutter_foreground": "var(muted)",
+        "gutter_foreground_highlight": "var(peach)",
+        "guide": "color(var(umber) alpha(0.85))",
+        "active_guide": "color(var(copper) alpha(0.55))",
+        "stack_guide": "var(umber)",
+        "find_highlight": "var(peach)",
+        "find_highlight_foreground": "var(bg)",
+        "highlight": "var(sky)",
+        "highlight_foreground": "var(bg)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(peach)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(mint)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(sage)",
+        "misspelling": "var(red)",
+        "fold_marker": "var(peach)",
+        "shadow": "color(var(bg) alpha(0.5))",
+        "shadow_width": "4",
+        "line_diff_width": "3",
+        "line_diff_added": "var(teal)",
+        "line_diff_modified": "var(blue)",
+        "line_diff_deleted": "var(red)"
+    },
+    "rules": [
+        {
+            "name": "Comments",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(muted)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Punctuation and Delimiters",
+            "scope": "punctuation, meta.brace, punctuation.separator, punctuation.terminator",
+            "foreground": "var(punctuation_muted)"
+        },
+        {
+            "name": "Strings",
+            "scope": "string, string.quoted",
+            "foreground": "var(sage)"
+        },
+        {
+            "name": "String Escapes and Regexp",
+            "scope": "constant.character.escape, string.regexp, punctuation.definition.template-expression",
+            "foreground": "var(light_mint)"
+        },
+        {
+            "name": "Numbers and Constants",
+            "scope": "constant.numeric, constant.language, constant.character, constant.other",
+            "foreground": "var(peach)"
+        },
+        {
+            "name": "Variables",
+            "scope": "variable, variable.other",
+            "foreground": "var(fg)"
+        },
+        {
+            "name": "Function Parameters",
+            "scope": "variable.parameter",
+            "foreground": "var(peach)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Language Variables (self, this)",
+            "scope": "variable.language",
+            "foreground": "var(red)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Keywords and Storage",
+            "scope": "keyword, storage.type, storage.modifier, storage.type.function.arrow",
+            "foreground": "var(orchid)"
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "foreground": "var(bright_orchid)"
+        },
+        {
+            "name": "Functions and Methods",
+            "scope": "entity.name.function, support.function, meta.function-call, variable.function",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Function Definitions",
+            "scope": "entity.name.function.definition, meta.function entity.name.function",
+            "foreground": "var(sky)"
+        },
+        {
+            "name": "Decorators and Annotations",
+            "scope": "meta.decorator, entity.name.decorator, punctuation.definition.annotation",
+            "foreground": "var(bright_orchid)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Classes, Types, and Structs",
+            "scope": "entity.name.class, entity.name.type, entity.name.struct, entity.name.namespace, support.class, support.type",
+            "foreground": "var(mint)"
+        },
+        {
+            "name": "Inherited Classes",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(light_mint)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Support Constants and Variables",
+            "scope": "support.constant, support.variable",
+            "foreground": "var(teal)"
+        },
+        {
+            "name": "HTML / XML Tags",
+            "scope": "entity.name.tag",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "HTML / XML Attributes",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(peach)"
+        },
+        {
+            "name": "JSON / YAML / CSS Properties",
+            "scope": "support.type.property-name, meta.mapping.key string, entity.name.tag.yaml",
+            "foreground": "var(sky)"
+        },
+        {
+            "name": "CSS Selectors",
+            "scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.id.css, entity.other.attribute-name.pseudo-class.css",
+            "foreground": "var(mint)"
+        },
+        {
+            "name": "CSS Values",
+            "scope": "support.constant.property-value.css, support.constant.color.css",
+            "foreground": "var(sage)"
+        },
+        {
+            "name": "Markdown: Headings",
+            "scope": "markup.heading, entity.name.section",
+            "foreground": "var(peach)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markdown: Bold",
+            "scope": "markup.bold",
+            "foreground": "var(sky)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markdown: Italic",
+            "scope": "markup.italic",
+            "foreground": "var(bright_orchid)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markdown: Inline Code and Blocks",
+            "scope": "markup.inline.raw, markup.raw",
+            "foreground": "var(sage)"
+        },
+        {
+            "name": "Markdown: Lists",
+            "scope": "markup.list, punctuation.definition.list_item",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Markdown: Blockquotes",
+            "scope": "markup.quote",
+            "foreground": "var(light_mint)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markdown: Links",
+            "scope": "markup.underline.link, meta.link",
+            "foreground": "var(sky)"
+        },
+        {
+            "name": "Diff: Headers",
+            "scope": "meta.diff, meta.diff.header",
+            "foreground": "var(sky)"
+        },
+        {
+            "name": "Diff: Inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(mint)"
+        },
+        {
+            "name": "Diff: Deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Diff: Changed",
+            "scope": "markup.changed",
+            "foreground": "var(peach)"
+        },
+        {
+            "name": "Invalid / Illegal",
+            "scope": "invalid, invalid.illegal",
+            "foreground": "var(bg)",
+            "background": "var(red)"
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(bg)",
+            "background": "var(peach)"
+        }
+    ]
+}

@@ -1,0 +1,220 @@
+{
+    "extends": "Default Dark.sublime-theme",
+    "variables": {
+        "bg": "#000000",
+        "bg_panel": "#0b0908",
+        "umber": "#2a241e",
+        "umber_border": "#3a3128",
+        "fg": "#a97759",
+        "fg_muted": "#6e5647",
+        "peach": "#ffb385",
+        "sage": "#80a896",
+        "red": "#b45648",
+        "blue": "#7393b9",
+        "sky": "#89afdd",
+        "orchid": "#bd7bcd",
+        "--background": "var(bg)",
+        "--foreground": "var(fg)",
+        "--accent": "var(peach)",
+        "--bluish": "var(blue)",
+        "--cyanish": "var(sage)",
+        "--greenish": "var(sage)",
+        "--orangish": "var(peach)",
+        "--pinkish": "var(orchid)",
+        "--purplish": "var(orchid)",
+        "--redish": "var(red)",
+        "--yellowish": "var(peach)"
+    },
+    "rules": [
+        {
+            "class": "title_bar",
+            "bg": "var(bg)",
+            "fg": "var(fg)"
+        },
+        {
+            "class": "sidebar_container",
+            "layer0.tint": "var(bg)",
+            "layer0.opacity": 1.0,
+            "content_margin": [0, 4, 0, 0]
+        },
+        {
+            "class": "sidebar_tree",
+            "row_padding": [12, 4]
+        },
+        {
+            "class": "sidebar_heading",
+            "color": "var(fg_muted)",
+            "font.bold": true
+        },
+        {
+            "class": "sidebar_label",
+            "color": "var(fg)"
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+            "color": "var(peach)"
+        },
+        {
+            "class": "vcs_status_badge",
+            "attributes": ["added"],
+            "layer0.tint": "var(sage)"
+        },
+        {
+            "class": "vcs_status_badge",
+            "attributes": ["modified"],
+            "layer0.tint": "var(blue)"
+        },
+        {
+            "class": "vcs_status_badge",
+            "attributes": ["deleted"],
+            "layer0.tint": "var(red)"
+        },
+        {
+            "class": "vcs_status_badge",
+            "attributes": ["untracked"],
+            "layer0.tint": "var(peach)"
+        },
+        {
+            "class": "tree_row",
+            "attributes": ["selected"],
+            "layer0.tint": "var(umber)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "tree_row",
+            "attributes": ["hover"],
+            "layer0.tint": "var(umber)",
+            "layer0.opacity": 0.5
+        },
+        {
+            "class": "tabset_control",
+            "layer0.tint": "var(bg)",
+            "layer0.opacity": 1.0,
+            "content_margin": [4, 0, 4, 0]
+        },
+        {
+            "class": "tab_control",
+            "layer0.tint": "var(bg)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["selected"],
+            "layer0.tint": "var(umber)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["hover", "!selected"],
+            "layer0.tint": "var(umber)",
+            "layer0.opacity": 0.45
+        },
+        {
+            "class": "tab_label",
+            "fg": "var(fg_muted)"
+        },
+        {
+            "class": "tab_label",
+            "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+            "fg": "var(fg)"
+        },
+        {
+            "class": "tab_label",
+            "attributes": ["dirty"],
+            "fg": "var(peach)"
+        },
+        {
+            "class": "tab_close_button",
+            "layer0.tint": "var(fg_muted)"
+        },
+        {
+            "class": "tab_close_button",
+            "attributes": ["hover"],
+            "layer0.tint": "var(red)"
+        },
+        {
+            "class": "tab_close_button",
+            "attributes": ["dirty"],
+            "layer0.tint": "var(sage)"
+        },
+        {
+            "class": "status_bar",
+            "layer0.tint": "var(bg)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "label_control",
+            "parents": [{"class": "status_bar"}],
+            "color": "var(fg_muted)"
+        },
+        {
+            "class": "status_button",
+            "min_size": [60, 0]
+        },
+        {
+            "class": "panel_control",
+            "layer0.tint": "var(bg_panel)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "text_line_control",
+            "layer0.tint": "var(bg)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "overlay_control",
+            "layer0.tint": "var(bg_panel)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "quick_panel",
+            "layer0.tint": "var(bg_panel)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "layer0.tint": "var(bg_panel)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "attributes": ["selected"],
+            "layer0.tint": "var(umber)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "quick_panel_label",
+            "fg": "var(fg)"
+        },
+        {
+            "class": "quick_panel_label",
+            "attributes": ["selected"],
+            "fg": "var(peach)"
+        },
+        {
+            "class": "quick_panel_path_label",
+            "fg": "var(fg_muted)"
+        },
+        {
+            "class": "quick_panel_score_label",
+            "fg": "var(sage)"
+        },
+        {
+            "class": "tooltip_control",
+            "layer0.tint": "var(bg_panel)",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 6]
+        },
+        {
+            "class": "puck_control",
+            "layer0.tint": "var(umber)",
+            "layer0.opacity": 0.9
+        },
+        {
+            "class": "grid_layout_control",
+            "border_size": 1,
+            "border_color": "var(umber_border)"
+        }
+    ]
+}
