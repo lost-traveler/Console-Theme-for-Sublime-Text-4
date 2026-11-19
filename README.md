@@ -1,6 +1,6 @@
 # Console
 
-<img width="1408" height="881" alt="sublime-o" src="https://github.com/user-attachments/assets/0dca7960-4782-43a5-9ae5-7b160aaf564c" />
+<img width="1408" height="881" alt="Screenshot" src="https://github.com/user-attachments/assets/78806c44-c970-4a5c-b180-3b627244f8a4" />
 
 
 A dark, high-contrast UI theme and color scheme for **Sublime Text 4**, featuring a pure black (`#000000`) background, warm copper (`#a97759`) base text, and a 16-color syntax palette.
